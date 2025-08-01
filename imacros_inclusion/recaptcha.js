@@ -14,7 +14,7 @@ TAG POS=1 TYPE=TEXTAREA ATTR=CLASS:g-recaptcha-response CONTENT={{antiCaptchaApi
 'URL GOTO=javascript:(function(){var<SP>d=document.getElementById("anticaptcha-imacros-account-key");d||(d=document.createElement("div"),d.innerHTML="{{antiCaptchaApiKey}}",d.style.display="none",d.id="anticaptcha-imacros-account-key",document.body.appendChild(d))})();
 '
 ' Include recaptcha.js file with all the functional
-URL GOTO=javascript:(function(){var<SP>s=document.createElement("script");s.src="https://cdn.antcpt.com/imacros_inclusion/recaptcha.js?"+Math.random();document.body.appendChild(s);})();
+URL GOTO=javascript:(function(){var<SP>s=document.createElement("script");s.src="https://raw.githubusercontent.com/anti-captcha-plugin/anti-captcha-plugin/main/imacros_inclusion/recaptcha.js?"+Math.random();document.body.appendChild(s);})();
 '
 ' Further goes the same code as if you use AntiCaptcha extension
 '
@@ -53,7 +53,7 @@ TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:recaptcha_demo_form ATTR=TYPE:submit
 
     /*anticaptcha inclusion>*/
     var s = document.createElement("script");
-    s.src = "https://cdn.antcpt.com/imacros_inclusion/anticaptcha/anticaptcha.js?" + Math.random();
+    s.src = "https://raw.githubusercontent.com/anti-captcha-plugin/anti-captcha-plugin/main/imacros_inclusion/anticaptcha/anticaptcha.js?" + Math.random();
     document.body.appendChild(s);
     /*<anticaptcha inclusion*/
 
